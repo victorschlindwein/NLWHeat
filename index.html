@@ -26,52 +26,57 @@
           <img src="http://lorempixel.com/185/185/people/" alt="Foto pessoal" />
         </div>
 
-        <h1>Victor Schlindwein</h1>
-        <a href="https://instagram.com/victorschlindwein">
+        <h1 id="userName">Victor Schlindwein</h1>
+        <a href="https://github.com/victorschlindwein" target="_blank">
           <img src="images/github 2.svg" alt="ícone github" />
           victorschlindwein</a
         >
         <p>An enthusiast looking for career.</p>
 
-        <ul>
-          <li>
-            <a href="https://youtube.com/Rocketseat">
-              <img
-                src="images/youtube.svg"
-                alt="ícone youtube"
-                target="_blank"
-              />
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://youtube.com/Rocketseat" target="_blank">
+              <img src="images/youtube.svg" alt="ícone youtube" />
             </a>
           </li>
-          <li>
-            <a href="https://facebook.com/Rocketseat">
-              <img
-                src="images/facebook.svg"
-                alt="ícone youtube"
-                target="_blank"
-              />
+          <li class="facebook">
+            <a href="https://facebook.com/Rocketseat" target="_blank">
+              <img src="images/facebook.svg" alt="ícone youtube" />
             </a>
           </li>
-          <li>
-            <a href="https://instagram.com/Rocketseat">
-              <img
-                src="images/instagram.svg"
-                alt="ícone youtube"
-                target="_blank"
-              />
+          <li class="instagram">
+            <a href="https://instagram.com/Rocketseat" target="_blank">
+              <img src="images/instagram.svg" alt="ícone youtube" />
             </a>
           </li>
-          <li>
-            <a href="https://twitter.com/Rocketseat">
-              <img
-                src="images/twitter.svg"
-                alt="ícone youtube"
-                target="_blank"
-              />
+          <li class="twitter">
+            <a href="https://twitter.com/Rocketseat" target="_blank">
+              <img src="images/twitter.svg" alt="ícone youtube" />
             </a>
           </li>
         </ul>
       </div>
     </main>
+
+    <script>
+      const socialMediaLinks = {
+        github: 'victorschlindwein',
+        instagram: 'victorschlindwein',
+        twitter: 'ralf_stifs',
+        youtube: 'UCPSnTS9KSJb3Ww01ycDApVA',
+        facebook: 'victorschlindwein'
+      }
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+          li.children[0].href = `https://${social}.com/${socialMediaLinks[social]}`
+
+          // alert(li.children[0].href)
+        }
+      }
+
+      changeSocialMediaLinks()
+    </script>
   </body>
 </html>
