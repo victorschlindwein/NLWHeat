@@ -23,15 +23,23 @@
           <span>
             <img src="images/build.svg" alt="Selo Rocketseat" />
           </span>
-          <img src="http://lorempixel.com/185/185/people/" alt="Foto pessoal" />
+          <img
+            id="userImage"
+            src="http://lorempixel.com/185/185/people/"
+            alt="Foto pessoal"
+          />
         </div>
 
         <h1 id="userName">Victor Schlindwein</h1>
-        <a href="https://github.com/victorschlindwein" target="_blank">
-          <img src="images/github 2.svg" alt="ícone github" />
-          victorschlindwein</a
+        <a
+          id="userLink"
+          href="https://github.com/victorschlindwein"
+          target="_blank"
         >
-        <p>An enthusiast looking for career.</p>
+          <img src="images/github 2.svg" alt="ícone github" />
+          <span id="userLogin">victorschlindwein</span></a
+        >
+        <p id="userBio">An enthusiast looking for career.</p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -58,25 +66,6 @@
       </div>
     </main>
 
-    <script>
-      const socialMediaLinks = {
-        github: 'victorschlindwein',
-        instagram: 'victorschlindwein',
-        twitter: 'ralf_stifs',
-        youtube: 'UCPSnTS9KSJb3Ww01ycDApVA',
-        facebook: 'victorschlindwein'
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-          li.children[0].href = `https://${social}.com/${socialMediaLinks[social]}`
-
-          // alert(li.children[0].href)
-        }
-      }
-
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
