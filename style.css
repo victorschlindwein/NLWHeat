@@ -6,6 +6,7 @@ html,
 body {
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
+  --heavyGrey: hsla(240, 9%, 89%, 0.637);
 
   height: 100%;
   font-family: 'Roboto', sans-serif;
@@ -42,7 +43,8 @@ main {
 
 .avatar span {
   position: absolute;
-  top: -15px;
+  top: 100px;
+  left: 80px;
   z-index: 1;
 }
 
@@ -71,6 +73,12 @@ a {
 
   justify-content: center;
   align-items: center;
+
+  transition: 0.2s;
+}
+
+a:hover {
+  color: var(--heavyGrey);
 }
 
 p {
@@ -87,4 +95,8 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+li:hover {
+  margin-top: -0.1rem;
 }
