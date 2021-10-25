@@ -2,7 +2,7 @@ const socialMediaLinks = {
   github: 'victorschlindwein',
   instagram: 'victorschlindwein',
   twitter: 'ralf_stifs',
-  youtube: 'UCPSnTS9KSJb3Ww01ycDApVA',
+  youtube: 'CortesdoCasimitoOFICIAL',
   facebook: 'victorschlindwein'
 }
 
