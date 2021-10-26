@@ -2,8 +2,8 @@ const socialMediaLinks = {
   github: 'victorschlindwein',
   instagram: 'victorschlindwein',
   twitter: 'ralf_stifs',
-  youtube: 'CortesdoCasimitoOFICIAL',
-  facebook: 'victorschlindwein'
+  facebook: 'victorschlindwein',
+  linkedin: '/in/victorschlindwein'
 }
 
 function changeSocialMediaLinks() {
