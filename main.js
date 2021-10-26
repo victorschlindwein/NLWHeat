@@ -1,9 +1,8 @@
 const socialMediaLinks = {
   github: 'victorschlindwein',
   instagram: 'victorschlindwein',
-  twitter: 'ralf_stifs',
   facebook: 'victorschlindwein',
-  linkedin: '/in/victorschlindwein'
+  linkedin: 'in/victorschlindwein'
 }
 
 function changeSocialMediaLinks() {
