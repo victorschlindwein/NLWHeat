@@ -1,6 +1,6 @@
 # NLWHeat
 
-Link para a página do projeto: https://victorschlindwein.github.io/NLWHeat/
+Link para a página do projeto: http://victorschlindwein.com.br/
 
 
 Tecnologias utilizadas: HTML, CSS e Javascript.
